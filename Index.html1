@@ -91,7 +91,7 @@
     <!-- BAGIAN CEO: Footer Section -->
     <footer id="footer-section" data-role="CEO">
         <p>&copy; 2026 GreenDesk ID. Kelas WebDev D - Kelompok 7.</p>
-        <p>Anggota Tim: [Nama Anggota 1], [Nama Anggota 2], [Nama Anggota 3], [Nama Anggota 4], [Nama Anggota 5], [Nama Anggota 6]</p>
+        <p>Anggota Tim: [Danendra], [Nama Anggota 2], [Nama Anggota 3], [Nama Anggota 4], [Nama Anggota 5], [Nama Anggota 6]</p>
     </footer>
 
     <!-- Pemanggilan File JavaScript -->
