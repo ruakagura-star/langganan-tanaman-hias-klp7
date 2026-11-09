@@ -1,0 +1,34 @@
+document.getElementById('calc-btn').addEventListener('click', function() {
+    // 1. Ambil nilai dari elemen input
+    let hargaPaket = parseInt(document.getElementById('package-select').value);
+    let jumlahPot = parseInt(document.getElementById('quantity-input').value);
+    let kodePromo = document.getElementById('promo-input').value.trim();
+    let resultBox = document.getElementById('result-box');
+
+    // Validasi input jumlah pot
+    if (isNaN(jumlahPot) || jumlahPot <= 0) {
+        resultBox.innerHTML = "<span style='color: red;'>Masukkan jumlah pot tanaman dengan benar!</span>";
+        return;
+    }
+
+    // 2. Hitung harga dasar (Pilihan Paket x Jumlah Pot Tanaman)
+    let hargaAwal = hargaPaket * jumlahPot;
+    let diskon = 0;
+
+    // 3. Logika percabangan diskon (Jika menggunakan kode promo "BISDIG" atau beli >= 3 pot)
+    if (kodePromo.toUpperCase() === "BISDIG" || jumlahPot >= 3) {
+        diskon = 0.10 * hargaAwal; // Diskon 10%
+    }
+
+    let totalBayar = hargaAwal - diskon;
+
+    // 4. Tampilkan hasil perhitungan ke layar
+    resultBox.innerHTML = `
+        <div style="background: #e8f5e9; padding: 10px; border-radius: 5px; border: 1px solid #a5d6a7;">
+            <p>Harga Awal: Rp ${hargaAwal.toLocaleString('id-ID')}</p>
+            <p>Potongan Diskon: Rp ${diskon.toLocaleString('id-ID')}</p>
+            <hr style="border: 0; border-top: 1px solid #ccc;">
+            <p style="color: #2e6930; font-size: 1.1rem;">Total Bayar Akhir: Rp ${totalBayar.toLocaleString('id-ID')}</p>
+        </div>
+    `;
+});
