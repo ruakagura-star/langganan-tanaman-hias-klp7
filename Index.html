@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenDesk - Langganan Tanaman Hias Meja Kerja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BAGIAN CEO: Header Section -->
+    <header id="header-section" data-role="CEO">
+        <div class="logo">🌱 GreenDesk ID</div>
+        <nav>
+            <a href="#hero-section">Beranda</a>
+            <a href="#catalog-section">Katalog</a>
+            <a href="#calc-section">Kalkulator</a>
+        </nav>
+    </header>
+
+    <!-- BAGIAN PM 1: Hero Section -->
+    <section id="hero-section" data-role="PM">
+        <div class="hero-content">
+            <h1>Segarkan Ruang Kerja & Belajar Anda dengan Tanaman Hias Segar</h1>
+            <p>Tingkatkan fokus, kurangi stres, dan hadirkan suasana asri di meja kerja Anda melalui layanan berlangganan tanaman hias mingguan dan bulanan.</p>
+            <div class="features">
+                <span>✨ 1. Perawatan Mudah</span>
+                <span>✨ 2. Tanaman Terseleksi & Sehat</span>
+                <span>✨ 3. Layanan Ganti Berkala</span>
+            </div>
+            <br>
+            <a href="#calc-section" class="cta-btn">Coba Hitung Biaya & Pesan</a>
+        </div>
+    </section>
+
+    <!-- BAGIAN PM 2: Catalog Section -->
+    <section id="catalog-section" data-role="PM">
+        <h2>Katalog Paket Langganan</h2>
+        <p class="subtitle">Pilih paket tanaman hias yang paling cocok untuk meja kerja atau ruang belajar Anda.</p>
+        
+        <div class="catalog-grid">
+            <div class="card">
+                <h3>Paket Meja Hijau Kecil</h3>
+                <p>Cocok untuk meja kerja minimalis. Mendapatkan 1 pot tanaman sekulen/kaktus mini estetik.</p>
+                <div class="price">Rp 50.000 / pot</div>
+                <small>Gunakan kode promo: BISDIG</small>
+            </div>
+
+            <div class="card">
+                <h3>Paket Sudut Ruangan Estetik</h3>
+                <p>Ideal untuk sudut kamar atau ruang belajar. Mendapatkan 1 pot tanaman berukuran sedang (Sansevieria/Monstera mini).</p>
+                <div class="price">Rp 120.000 / pot</div>
+                <small>Gunakan kode promo: BISDIG</small>
+            </div>
+
+            <div class="card">
+                <h3>Paket Dekorasi Ruang Kerja</h3>
+                <p>Paket komplit untuk memperindah seluruh meja kerja besar. Mendapatkan 1 set tanaman premium berdekorasi lengkap.</p>
+                <div class="price">Rp 250.000 / pot</div>
+                <small>Gunakan kode promo: BISDIG</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN SE 1: Calc Section (Formulir Kalkulator) -->
+    <section id="calc-section" data-role="SE">
+        <h2>Kalkulator Simulasi Biaya Langganan</h2>
+        <p>Hitung total biaya sewa dan langganan tanaman hias Anda secara otomatis di sini.</p>
+        
+        <div class="calc-form">
+            <label for="package-select">Pilih Paket:</label>
+            <select id="package-select">
+                <option value="50000">Paket Meja Hijau Kecil - Rp 50.000</option>
+                <option value="120000">Paket Sudut Ruangan Estetik - Rp 120.000</option>
+                <option value="250000">Paket Dekorasi Ruang Kerja - Rp 250.000</option>
+            </select>
+
+            <label for="quantity-input">Jumlah Pot Tanaman:</label>
+            <input type="number" id="quantity-input" min="1" value="1" placeholder="Masukkan jumlah pot">
+
+            <label for="promo-input">Kode Promo:</label>
+            <input type="text" id="promo-input" placeholder="Ketik kode (misal: BISDIG)">
+
+            <button id="calc-btn">Hitung Total Biaya</button>
+
+            <!-- Tempat Hasil Perhitungan -->
+            <div id="result-box" style="margin-top: 20px; font-weight: bold;"></div>
+        </div>
+    </section>
+
+    <!-- BAGIAN CEO: Footer Section -->
+    <footer id="footer-section" data-role="CEO">
+        <p>&copy; 2026 GreenDesk ID. Kelas WebDev D - Kelompok 7.</p>
+        <p>Anggota Tim: [Nama Anggota 1], [Nama Anggota 2], [Nama Anggota 3], [Nama Anggota 4], [Nama Anggota 5], [Nama Anggota 6]</p>
+    </footer>
+
+    <!-- Pemanggilan File JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
