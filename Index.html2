@@ -1,0 +1,162 @@
+/* Pengaturan Umum & Tipografi */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #2e6930;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero-section {
+    background: linear-gradient(rgba(46, 105, 48, 0.8), rgba(46, 105, 48, 0.8)), url('https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #ffbb33;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #ffa500;
+}
+
+/* Catalog Section & Flexbox Grid */
+section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.catalog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .price {
+    font-size: 1.2rem;
+    color: #2e6930;
+    font-weight: bold;
+    margin: 15px 0 5px 0;
+}
+
+/* Kalkulator Form */
+.calc-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.calc-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.calc-form select, .calc-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#calc-btn {
+    width: 100%;
+    background-color: #2e6930;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#calc-btn:hover {
+    background-color: #235224;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3f20;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Media Query Responsif untuk Ponsel */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+    }
+    header nav a {
+        margin: 0 10px;
+    }
+    .catalog-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
